@@ -347,3 +347,74 @@
 // const [one, two, ...others] = arr; // 나머지는 배열로 할당
 
 // console.log(one, two, others);
+
+
+
+// // DOM(***나중에 공부 따로 필요***)
+
+// const title = document.getElementById('title'); // ID를 사용해서 요소 선택
+// console.log(title);
+
+// const title_class = document.getElementsByClassName('title_class'); // class는 중복 사용이 가능하기 때문에 여러개의 요소들(s)을 배열과 비슷한 형태로 반환함
+// console.log(title_class);
+
+// const title_tag = document.getElementsByTagName('h2'); // 태그로 선택
+// console.log(title_tag);
+
+// const title = document.querySelector('h2'); // 태그로 선택
+// const title = document.querySelector('#title'); // 아이디로 선택
+// const title = document.querySelector('.title_clas'); // 클래스로 선택
+// console.log(title_tag);
+
+// const title = document.querySelectorAll('.title'); // 이 클래스를 사용하는 요소들을 모두 가져와 배열로 반환
+
+
+// const title = document.querySelector('h2');
+
+// title.innerText = '안녕하세요!'; // 텍스트 변경
+// title.style.color = 'blue'; // 스타일 변경
+// // 구글 HTML Element를 검색
+
+// const title = document.createElement('h1'); // 새로운 요소 만들기
+// const body = document.querySelector('body');
+
+// title.innerText = '새로운 친구예요!'; // 텍스트 변경
+// title.style.color = 'red'; // 스타일 변경
+
+// body.appendChild(title); // 바디에 추가(가장 아래에 추가됨)
+
+
+
+// // 이벤트
+
+// const button = document.querySelector('button');
+// const removeButton = document.querySelector('.remove');
+
+// function handler(event) {
+//     console.log('click');
+// }
+
+// function removeHandler(event) {
+//     button.removeEventListener('click', handler);
+//     // removeEventListener는 해당 버튼의 리스너를 삭제시켜 함수가 실행되지 않게 만듦
+// }
+
+// button.addEventListener('click', handler); // 클릭할 때마다 함수 실행
+// removeButton.addEventListener('click', removeHandler);
+
+
+
+// // 모듈(리액트 네이티브에서 썼던 import같은 거)
+
+// import { greeting } from "./hello.js";
+// // hello.js 파일에서 greeting 함수를 가져옴
+
+// greeting();
+// // Named Exports(중괄호 사용)
+
+
+// import hello from "./hello.js";
+// // hello.js 파일에서 hello라는 이름의 함수로 가져옴
+
+// hello();
+// // default Exports(괄호 사용 X)
